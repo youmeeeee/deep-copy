@@ -1,0 +1,22 @@
+{
+  "name": "deep-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "deepCopy.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youmeeeee/deep-copy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youmeeeee/deep-copy/issues"
+  },
+  "homepage": "https://github.com/youmeeeee/deep-copy#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

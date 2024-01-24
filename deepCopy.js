@@ -1,15 +1,15 @@
-var deepCopy = (obj) => {
-    let newObj = {};
+const deepCopy = (obj) => {
     if (Array.isArray(obj)) {
-        newObj = obj.map(item => (typeof obj === 'object' && obj !== null)  ? deepCopy(item) : item);
+       return  newObj = obj.map(item => deepCopy(item));
     } else if (typeof obj === 'object' && obj !== null) {
+        const newObj = {};
         for (let key in obj) {
             newObj[key] = deepCopy(obj[key])
         }
+        return newObj;
     } else { 
-        newObj = obj;
+        return obj;
     }
-    return newObj;
 };
 
 module.exports = deepCopy;
